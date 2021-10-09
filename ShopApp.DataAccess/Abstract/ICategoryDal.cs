@@ -2,14 +2,12 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace ShopApp.DataAccess.Abstract
 {
-   public interface IProductDal:IRepostory<Product>
+    public interface ICategoryDal : IRepostory<Category>
     {
-        IEnumerable<Product> GetPopularProducts();       
     }
 }
