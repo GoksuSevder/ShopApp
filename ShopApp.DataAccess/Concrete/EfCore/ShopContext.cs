@@ -13,10 +13,16 @@ namespace ShopApp.DataAccess.Concrete.EfCore
         public DbSet<Product>  Products { get; set; }
         public DbSet<Category>  Categories { get; set; }
 
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            modelBuilder.Entity<ProductCategory>()
+                .HasKey(c => new {c.CategoryId,c.ProductId });
+        }
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer(@"Server=(localdb)\ProjectsV13; Database=ShopDb; integrated securety= true;");
+            optionsBuilder.UseSqlServer(@"Server=(localdb)\ProjectsV13; Database=ShopDb; integrated security= true;");
         }
     }
     
 }
+
