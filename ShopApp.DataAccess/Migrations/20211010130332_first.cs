@@ -2,7 +2,7 @@
 
 namespace ShopApp.DataAccess.Migrations
 {
-    public partial class CreateDataBase : Migration
+    public partial class first : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {

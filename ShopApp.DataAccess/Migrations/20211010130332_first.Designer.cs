@@ -9,8 +9,8 @@ using ShopApp.DataAccess.Concrete.EfCore;
 namespace ShopApp.DataAccess.Migrations
 {
     [DbContext(typeof(ShopContex))]
-    [Migration("20211009184542_CreateDataBase")]
-    partial class CreateDataBase
+    [Migration("20211010130332_first")]
+    partial class first
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {

@@ -43,7 +43,7 @@ namespace ShopApp.DataAccess.Concrete.EfCore
             using (var context = new TContext())
             {
                 return filter == null
-                      ? context.Set<T>()
+                      ? context.Set<T>().ToList()
                       : context.Set<T>().Where(filter).ToList();
             }
         }

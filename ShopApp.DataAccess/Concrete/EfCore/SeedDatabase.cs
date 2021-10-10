@@ -38,6 +38,8 @@ namespace ShopApp.DataAccess.Concrete.EfCore
             new Product () {Name="Samsung7",ImageUrl="2.jpg",Price=2000},
             new Product () {Name="Samsung8",ImageUrl="3.jpg",Price=3000},
             new Product () {Name="Samsung9",ImageUrl="4.jpg",Price=4000},
+            new Product () {Name="IPhone6",ImageUrl="5.jpg",Price=3000},
+            new Product () {Name="IPhone7",ImageUrl="6.jpg",Price=4000},
                        
         };
     }
