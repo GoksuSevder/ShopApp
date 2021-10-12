@@ -1,10 +1,10 @@
-﻿@model ProductListModel
+﻿@model IEnumerable< ShopApp.Entities.Product>
 @{
     ViewData["Title"] = "Index";
 }
 
 <h1>Index</h1>
-@foreach (var item in Model.Products)
+@foreach (var item in Model)
 {
     <p>
         @item.Name

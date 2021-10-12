@@ -38,7 +38,7 @@ namespace ShopApp.DataAccess.Concrete.EfCore
                 context.SaveChanges();
             }
         }
-        public List<T> GetAll(Expression<Func<T, bool>> filter=null)
+        public IEnumerable<T> GetAll(Expression<Func<T, bool>> filter=null)
         {
             using (var context = new TContext())
             {

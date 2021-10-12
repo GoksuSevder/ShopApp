@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ShopApp.WebUI.Models
 {
-    public class ProductListModel
+    public class ProducListModel
     {
         public List<Product> Products { get; set; }
        // public List<Category> Categories { get; set; }
